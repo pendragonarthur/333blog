@@ -1,0 +1,39 @@
+# Diretórios e arquivos do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Diretório do ambiente virtual (se estiver usando venv)
+venv/
+env/
+
+# Arquivos de configuração sensíveis
+.env
+*.env
+config/settings_local.py
+
+# Dependências
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Arquivos do editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Mídia e uploads
+media/
+static/
+
+# Arquivos de cache do Django
+db.sqlite3
+*.pot
+*.pyc
+
+# Arquivos de migração gerados automaticamente
+**/migrations/*.py
+!**/migrations/__init__.py
