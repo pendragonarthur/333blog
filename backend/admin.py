@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Post
+from .posts.models import Post
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('title', 'content', 'created_by', 'created_at')
-    search_fields = ('title', 'content', 'created_by')
-    list_filter = ('created_at',)
+    list_display = ('title', 'content', 'author', 'posted_at')
+    search_fields = ('title', 'content', 'author')
+    list_filter = ('posted_at',)
